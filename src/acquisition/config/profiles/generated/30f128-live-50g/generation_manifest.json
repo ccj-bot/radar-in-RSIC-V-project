@@ -1,0 +1,66 @@
+{
+  "schema": "nx-radar-generated-profile/v1",
+  "profile_name": "30f128-live-50g",
+  "generated_at": "2026-07-20T04:35:45.002202+00:00",
+  "radar_template": "/home/ysy/nx_radar/legacy/pyRadar-main/configFiles/mmwaveconfig_0508_30f128_safe.txt",
+  "dca_template": "/home/ysy/nx_radar/legacy/pyRadar-main/configFiles/cf.json",
+  "generated_radar_config": "/home/ysy/nx_radar/config/profiles/generated/30f128-live-50g/mmwave.cfg",
+  "generated_dca_config": "/home/ysy/nx_radar/config/profiles/generated/30f128-live-50g/dca1000.json",
+  "applied_values": {
+    "radar_profile0_adc_samples": 1024,
+    "radar_frame_loop_count": 128,
+    "radar_frame_periodicity_ticks": 6666667,
+    "radar_channel_rx_mask": 15,
+    "radar_channel_tx_mask": 7,
+    "radar_lvds_lane_mask": 15,
+    "radar_lvds_data_rate_code": 1,
+    "dca_packet_delay_us": 5,
+    "radar_chirp_tx_sequence": [
+      0
+    ],
+    "radar_adc_format": 1,
+    "radar_frame_numAdcSamples": 2048,
+    "physical_segment_frames": 1,
+    "physical_segment_pulses": 128
+  },
+  "sha256": {
+    "radar": "a73236cfa74889cbf96742f3432a25eabcdb8e6c369851beba0549f79f9d50ad",
+    "dca": "40b7acde605572a1379daa8590340e190068f0e914901f6dfda23ba117dce895"
+  },
+  "physical_timing": {
+    "schema": "nx-radar-physical-timing/v1",
+    "config_path": "/home/ysy/nx_radar/config/profiles/generated/30f128-live-50g/mmwave.cfg.part",
+    "profile_id": 0,
+    "selected_chirp_indices": [
+      0
+    ],
+    "selected_tx_masks": [
+      1
+    ],
+    "unique_chirps_per_loop": 1,
+    "loop_count": 128,
+    "chirps_per_frame": 128,
+    "idle_time_us": 40.0,
+    "ramp_end_time_us": 60.0,
+    "chirp_period_us": 100.0,
+    "within_frame_prf_hz": 10000.0,
+    "frame_period_ms": 33.333335000000005,
+    "frame_rate_hz": 29.99999850000007,
+    "frame_on_time_ms": 12.8,
+    "frame_blank_time_ms": 20.533335000000005,
+    "frame_boundary_interval_us": 20633.335000000003,
+    "boundary_to_regular_interval_ratio": 206.33335000000002,
+    "multi_frame_uniform_fft_safe": false,
+    "adc_samples": 1024,
+    "adc_sample_rate_hz": 22500000.0,
+    "adc_capture_time_us": 45.51111111111111,
+    "start_frequency_hz": 75999999976.15814,
+    "center_frequency_hz": 77900434112.54883,
+    "wavelength_m": 0.003848405485993396,
+    "frequency_slope_mhz_per_us": 79.99956607818604,
+    "adc_bandwidth_hz": 3640869140.625,
+    "range_resolution_m": 0.04117045222181989,
+    "max_unambiguous_range_m": 42.15854307514357,
+    "ti_minimum_inter_frame_blank_ms": 0.3
+  }
+}

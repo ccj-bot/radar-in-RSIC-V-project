@@ -1,0 +1,41 @@
+{
+  "station_id": "new_orin_nx",
+  "network": {
+    "interface": "enP8p1s0",
+    "nx_ip": "192.168.33.30",
+    "prefix_length": 24,
+    "dca_ip": "192.168.33.180",
+    "config_port": 4096,
+    "data_port": 4098,
+    "dca_config": "legacy/pyRadar-main/configFiles/cf.json",
+    "dca_data_source_port": 1024,
+    "dca_data_source_port_verified": true,
+    "verified_stream_geometry": {
+      "bytes_per_chirp": 16384,
+      "chirps_per_frame": 128,
+      "terminal_untransmitted_tail_bytes_for_10_frames": 752,
+      "evidence_session": "/home/ysy/nx_radar/sessions/20260719T151003__validate-30f128-live-50g",
+      "verified_at": "2026-07-19T07:10:06.926554+00:00"
+    },
+    "last_bounded_stream_validation": {
+      "bytes_per_chirp": 16384,
+      "chirps_per_frame": 128,
+      "terminal_untransmitted_tail_bytes": 752,
+      "evidence_session": "/home/ysy/nx_radar/sessions/19700101T084443_586294__validate-continuous-19700101-084428-347453",
+      "verified_at": "1970-01-01T00:44:46.834876+00:00"
+    }
+  },
+  "paths": {
+    "session_root": "/home/ysy/nx_radar/sessions",
+    "log_root": "/home/ysy/nx_radar/logs",
+    "fpga_udp_root": "/home/ysy/nx_radar/fpga_udp",
+    "imaging_root": "/home/ysy/nx_radar/imaging/fft_image_NX_live"
+  },
+  "capture": {
+    "physical_segment_pulses": 128,
+    "packet_size": 1466,
+    "bounded_queue": true,
+    "fail_on_queue_overflow": true,
+    "fail_on_packet_loss": true
+  }
+}

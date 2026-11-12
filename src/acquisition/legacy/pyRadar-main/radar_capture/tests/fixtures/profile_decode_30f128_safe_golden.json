@@ -1,0 +1,24 @@
+{
+  "effective_tx_sequence": [
+    0
+  ],
+  "effective_rx_channels": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "adc_samples": 1024,
+  "adc_samples_source": "profileId=0",
+  "chirps_per_frame": 128,
+  "frame_periodicity_ms": 33.333335000000005,
+  "frame_periodicity_source": "periodicity_5ns_ticks",
+  "frame_rate_hz": 29.99999850000007,
+  "frame_bytes": 2097152,
+  "estimated_raw_rate_MBps": 62.91455685427215,
+  "risk_level": "safe",
+  "required_warning_substrings": [
+    "5 ns ticks",
+    "differs from selected profileId=0"
+  ]
+}

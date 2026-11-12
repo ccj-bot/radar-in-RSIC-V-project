@@ -1,0 +1,78 @@
+# mmWave Studio Configuration Snapshot (from screenshots you shared)
+# Device: AWR2243 + DCA1000
+# Notes:
+# - Values come from the screenshots and discussion. Items marked with "(?)" are inferred/less certain.
+# - Units follow the labels in mmWave Studio.
+
+[ProfileCfg]
+Start_Freq_GHz           = 77.000000
+Freq_Slope_MHz_per_us    = 29.982
+Idle_Time_us             = 100.00
+Ramp_End_Time_us         = 60.00
+ADC_Start_Time_us        = 6.00
+ADC_Samples              = 256
+Sample_Rate_ksps         = 10000   # 10 MSps
+RX_Gain_dB               = 30
+Bandwidth_MHz            = 1798.92  # shown at bottom of Profile area
+HPF1_Corner_kHz          = 175K
+HPF2_Corner_kHz          = 350K
+
+[FrameCfg]
+Num_Chirp_Loops          = 128
+Periodicity_ms           = 40.000000
+Trigger_Delay_us         = 0.0
+Active_Ramp_Duty_Cycle   = 0.0
+Trigger_Select           = SoftwareTrigger
+Num_Frames               = 8 (?)    # some captures showed 8 frames/file; adjust to your session
+TX_Enable                = TX0, TX1 # both checked in screenshot
+RX_Enable                = RX0, RX1, RX2, RX3
+
+[StaticCfg]
+Tx_Channels              = TX0, TX1 (TX2 off)
+Rx_Channels              = RX0, RX1, RX2, RX3
+Cascading_Mode           = Single_Chip
+ADC_Bits                 = 16
+ADC_Format               = Complex1x
+IQ_Swap                  = I_First
+RF_Init_Executed         = yes
+Frequency_Limit_Low_GHz  = 76.0
+Frequency_Limit_High_GHz = 81.0
+
+[DataCfg]
+Data_Path                = LVDS
+Virtual_Channel_No       = 0
+CQ_BitWidth              = 16 Bit
+CQ0_TransSize_16bit      = 132
+CQ1_TransSize_16bit      = 132
+CQ2_TransSize_16bit      = 72
+Packet0                  = ADC_ONLY
+Packet1                  = Suppress PKT   # as shown
+Lane_Clock               = DDR Clock
+Lane_Data_Rate_Mbps      = 600
+LVDS_Lanes               = Lane1,Lane2,Lane3,Lane4
+MSB_First                = true
+CRC                      = false
+Packet_End_Pulse         = false
+Discontinuous_Clock      = false
+
+[Derived (from discussion)]
+Chirp_Time_Tramp_us      = 60.0
+Chirp_Idle_Tidle_us      = 100.0
+Chirp_Period_Tc_us       = 160.0
+PRF_Hz                   = 1/(Tramp+Tidle) ≈ 6250
+Carrier_Freq_fc_GHz      = 77
+Wavelength_lambda_m      = c/fc ≈ 0.003896
+Range_Slope_K_Hz_per_s   = 29.982e12
+Max_Unamb_Range_m        = c*Fs/(2*Slope) ≈ 50 (approx; depends on exact Fs & window)
+Comment                  = Used in SAR_Dechirp: Fs=10e6, K=29.982e12, fc=77e9, PRF≈6250
+
+[Capture & PostProc]
+PostProc_Directory       = (your captures folder)
+Output_Bin_Name          = adc_data_Raw_0.bin
+Auto_Rename              = handled by MATLAB scripts (watch_*.m)
+Files_Per_Run            = varies  # example files: adc_data_YYYYMMDD_HHMMSS.bin
+
+[Runtime Notes]
+- Your MATLAB parsing assumed: complex IQ16, 4 RX, 2 TX (TDM: odd chirps=TX0, even=TX1), 256 ADC samples, 128 chirps/frame.
+- Real-time image used frame window of 2 frames → one echo (R-θ) per 2 frames.
+- If any of your current sessions use different values (e.g., Num_Frames, lane rate), please update them here.

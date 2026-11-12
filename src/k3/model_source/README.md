@@ -1,0 +1,2 @@
+原始浮点ONNX保存在01_相关证明材料/模型源文件/xu_yolo11s_fp32.onnx。复现导出时按需复制到本目录；板端运行直接使用optimization_v3/models中的已验证模型，无需该源图。
+原PT参考输出数组保存在PT_reference_arrays。

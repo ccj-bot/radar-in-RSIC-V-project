@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=雷达采集
+Comment=采集控制、实时状态与历史记录
+Exec=/home/ysy/nx_radar/bin/radar-ui
+Icon=network-wired
+Terminal=false
+Categories=Science;

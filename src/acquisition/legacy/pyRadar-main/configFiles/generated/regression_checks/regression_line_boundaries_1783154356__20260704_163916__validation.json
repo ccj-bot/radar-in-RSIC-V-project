@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "risk_level": "unsafe",
+  "errors": [],
+  "warnings": [
+    "framePeriodicity not found; derived frame_periodicity_ms from legacy periodicity using 5 ns ticks",
+    "raw throughput is above conservative long-run DCA1000 threshold"
+  ],
+  "manual_review_required": false,
+  "generator_warnings": [],
+  "changed_lines": [
+    "-numAdcSamples=1024;",
+    "+numAdcSamples=2048;",
+    "-numAdcSamples=1024;",
+    "+numAdcSamples=2048;",
+    "-numAdcSamples=512;",
+    "+numAdcSamples=2048;",
+    "-numAdcSamples=256;",
+    "+numAdcSamples=2048;",
+    "-subFramePeriodicity=5000000;",
+    "-numAdcSamplesAF=256",
+    "+subFramePeriodicity=33333333;",
+    "+numAdcSamplesAF=2048",
+    "-subFramePeriodicity=5000000;",
+    "-numAdcSamplesAF=256",
+    "+subFramePeriodicity=33333333;",
+    "+numAdcSamplesAF=2048",
+    "-subFramePeriodicity=5000000;",
+    "-numAdcSamplesAF=256",
+    "+subFramePeriodicity=33333333;",
+    "+numAdcSamplesAF=2048",
+    "-subFramePeriodicity=5000000;",
+    "-numAdcSamplesAF=256",
+    "+subFramePeriodicity=33333333;",
+    "+numAdcSamplesAF=2048"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": {"zh": "AWR2243 连续采集至容量上限填写表", "en": "AWR2243 Continuous Data-Budget Capture Form"},
+  "instructions": {"zh": "只修改 value。系统只会在完整物理 bin 关闭后停止；出现丢包、短包或队列溢出会提前失败。", "en": "Edit only value fields. The system stops only after a complete physical bin closes; loss, short packets, or queue overflow fail early."},
+  "fields": {
+    "profile_name": {"zh": "配置名称", "en": "Profile name", "value": "awr2243_continuous_100g_128chirp_segments"},
+    "radar_config": {"zh": "雷达配置文件", "en": "Radar configuration file", "value": "legacy/pyRadar-main/configFiles/mmwaveconfig_0508_30f128_safe.txt"},
+    "capture_mode": {"zh": "采集模式", "en": "Capture mode", "value": "continuous_until_data_budget"},
+    "frames": {"zh": "帧数（连续模式忽略）", "en": "Frames (ignored in continuous mode)", "value": 0},
+    "stop_after_gib": {"zh": "写入多少 GiB 后停止", "en": "Stop after writing GiB", "value": 100},
+    "reserve_disk_gib": {"zh": "始终保留的磁盘 GiB", "en": "Disk GiB to reserve", "value": 100},
+    "physical_segment_pulses": {"zh": "每个物理 bin 的 chirp 数", "en": "Chirps per physical bin", "value": 128},
+    "reconstruction_windows": {"zh": "SAR 重建窗口 chirp 数列表", "en": "SAR reconstruction window chirps", "value": [256, 500]}
+  }
+}

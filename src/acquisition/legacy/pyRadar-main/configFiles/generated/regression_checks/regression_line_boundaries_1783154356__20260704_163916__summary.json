@@ -1,0 +1,38 @@
+{
+  "config_path": "/home/radar/pyRadar-main/configFiles/generated/regression_checks/regression_line_boundaries_1783154356__20260704_163916.txt",
+  "channel_tx_mask": 7,
+  "channel_rx_mask": 15,
+  "effective_tx_sequence": [
+    0
+  ],
+  "effective_rx_channels": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "adc_samples": 2048,
+  "adc_samples_source": "profileId=0",
+  "chirp_start": 0,
+  "chirp_end": 0,
+  "loop_count": 128,
+  "chirps_per_frame": 128,
+  "frame_periodicity_ms": 33.333335000000005,
+  "frame_periodicity_source": "periodicity_5ns_ticks",
+  "frame_rate_hz": 29.99999850000007,
+  "rx_count": 4,
+  "tx_count_effective": 1,
+  "frame_bytes": 4194304,
+  "estimated_raw_rate_MBps": 125.8291137085443,
+  "risk_level": "unsafe",
+  "warnings": [
+    "framePeriodicity not found; derived frame_periodicity_ms from legacy periodicity using 5 ns ticks"
+  ],
+  "raw_commands_count": 259,
+  "profile_name": "regression_line_boundaries_1783154356",
+  "template_config": "/home/radar/pyRadar-main/configFiles/mmwaveconfig_0508_30f128_safe.txt",
+  "generated_config": "/home/radar/pyRadar-main/configFiles/generated/regression_checks/regression_line_boundaries_1783154356__20260704_163916.txt",
+  "segment_pulses": 128,
+  "segment_bytes": 4194304,
+  "generator_warnings": []
+}

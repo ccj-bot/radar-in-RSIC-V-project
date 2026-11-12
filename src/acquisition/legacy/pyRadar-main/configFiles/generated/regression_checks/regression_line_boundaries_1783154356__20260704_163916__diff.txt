@@ -1,0 +1,82 @@
+--- /home/radar/pyRadar-main/configFiles/mmwaveconfig_0508_30f128_safe.txt
++++ /home/radar/pyRadar-main/configFiles/generated/regression_checks/regression_line_boundaries_1783154356__20260704_163916.txt
+@@ -142,7 +142,7 @@
+ txPhaseShifter=0;
+ freqSlopeConst=1657;
+ txStartTime=0;
+-numAdcSamples=1024;
++numAdcSamples=2048;
+ digOutSampleRate=22500;
+ hpfCornerFreq1=0;
+ hpfCornerFreq2=0;
+@@ -163,7 +163,7 @@
+ txPhaseShifter=0;
+ freqSlopeConst=1657;
+ txStartTime=0;
+-numAdcSamples=1024;
++numAdcSamples=2048;
+ digOutSampleRate=22500;
+ hpfCornerFreq1=0;
+ hpfCornerFreq2=0;
+@@ -184,7 +184,7 @@
+ txPhaseShifter=0;
+ freqSlopeConst=621;
+ txStartTime=0;
+-numAdcSamples=512;
++numAdcSamples=2048;
+ digOutSampleRate=10000;
+ hpfCornerFreq1=0;
+ hpfCornerFreq2=0;
+@@ -205,7 +205,7 @@
+ txPhaseShifter=0;
+ freqSlopeConst=621;
+ txStartTime=0;
+-numAdcSamples=256;
++numAdcSamples=2048;
+ digOutSampleRate=10000;
+ hpfCornerFreq1=0;
+ hpfCornerFreq2=0;
+@@ -288,8 +288,8 @@
+ chirpStartIdxOffset=0;
+ numOfBurst=1;
+ numOfBurstLoops=1;
+-subFramePeriodicity=5000000;
+-numAdcSamplesAF=256
++subFramePeriodicity=33333333;
++numAdcSamplesAF=2048
+ numChirpsInDataPacket=1
+ #end
+ 
+@@ -303,8 +303,8 @@
+ chirpStartIdxOffset=0;
+ numOfBurst=1;
+ numOfBurstLoops=1;
+-subFramePeriodicity=5000000;
+-numAdcSamplesAF=256
++subFramePeriodicity=33333333;
++numAdcSamplesAF=2048
+ numChirpsInDataPacket=1
+ #end
+ 
+@@ -318,8 +318,8 @@
+ chirpStartIdxOffset=0;
+ numOfBurst=1;
+ numOfBurstLoops=1;
+-subFramePeriodicity=5000000;
+-numAdcSamplesAF=256
++subFramePeriodicity=33333333;
++numAdcSamplesAF=2048
+ numChirpsInDataPacket=1
+ #end
+ 
+@@ -333,8 +333,8 @@
+ chirpStartIdxOffset=0;
+ numOfBurst=1;
+ numOfBurstLoops=1;
+-subFramePeriodicity=5000000;
+-numAdcSamplesAF=256
++subFramePeriodicity=33333333;
++numAdcSamplesAF=2048
+ numChirpsInDataPacket=1
+ #end
+ 

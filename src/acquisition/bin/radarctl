@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="/home/ysy/nx_radar"
+export PYTHONPATH="$ROOT/fpga_udp:$ROOT:$ROOT/.python_deps:$ROOT/legacy/pyRadar-main${PYTHONPATH:+:$PYTHONPATH}"
+if [ "$#" -eq 0 ]; then
+  set -- menu
+fi
+exec /usr/bin/python3 -m radar_stack.cli.main "$@"

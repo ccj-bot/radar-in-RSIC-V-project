@@ -1,0 +1,14 @@
+onnx==1.21.0
+onnxruntime==1.24.3
+onnxslim==0.1.87
+onnx-graphsurgeon==0.6.1
+onnxconverter-common==1.16.0
+torch
+torchvision
+numpy
+pandas
+Pillow
+opencv-python
+tqdm
+tabulate
+loguru

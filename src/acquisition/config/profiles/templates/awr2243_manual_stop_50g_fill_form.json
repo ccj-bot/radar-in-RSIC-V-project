@@ -1,0 +1,17 @@
+{
+  "title": {"zh": "AWR2243 手动停止、单次最多 50 GiB 采集填写表", "en": "AWR2243 Manual-Stop Capture with 50 GiB Session Cap"},
+  "instructions": {
+    "zh": "只修改 value。启动后会持续采集，直到操作员发送停止指令；若未停止，系统会在完整 bin 边界自动封顶。此模式每次会话的雷达原始数据上限不能超过 50 GiB。frames 留空。",
+    "en": "Edit only value fields. Capture runs until the operator sends stop; if not stopped, the system caps at a complete-bin boundary. This mode never permits more than 50 GiB raw radar data per session. Leave frames blank."
+  },
+  "fields": {
+    "profile_name": {"zh": "配置名称", "en": "Profile name", "value": "awr2243_manual_stop_50g_128chirp_segments"},
+    "radar_config": {"zh": "雷达配置文件", "en": "Radar configuration file", "value": "legacy/pyRadar-main/configFiles/mmwaveconfig_0508_30f128_safe.txt"},
+    "capture_mode": {"zh": "采集模式", "en": "Capture mode", "value": "manual_stop_with_data_cap"},
+    "frames": {"zh": "帧数（本模式留空）", "en": "Frames (leave blank for this mode)", "value": null},
+    "stop_after_gib": {"zh": "单次会话雷达数据硬上限 GiB（不得大于 50）", "en": "Hard raw-radar session cap in GiB (must not exceed 50)", "value": 50},
+    "reserve_disk_gib": {"zh": "始终保留的磁盘空间 GiB", "en": "Disk GiB to reserve at all times", "value": 100},
+    "physical_segment_pulses": {"zh": "每个物理 bin 的 chirp 数", "en": "Chirps per physical bin", "value": 128},
+    "reconstruction_windows": {"zh": "SAR 重建窗口 chirp 数列表", "en": "SAR reconstruction window chirps", "value": [256, 500]}
+  }
+}

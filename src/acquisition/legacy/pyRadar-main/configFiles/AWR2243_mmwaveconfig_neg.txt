@@ -1,0 +1,177 @@
+#
+# Experimental negative-chirp profile for AWR2243.
+# This keeps the total sweep bandwidth close to the default profile,
+# but moves the start frequency upward so the down-chirp stays inside
+# the 77 GHz device operating band.
+#
+
+#
+# Global configuration
+# Firmware download enable/disable; 1 - Enable; 0 - Disable
+# mmWaveLink logging enable/disable; 1 - Enable; 0 - Disable
+# Transport mode; 1 - I2C; 0 - SPI
+# Flash connected enable/disable; 1 - Enable; 0 - Disable
+#
+EnableFwDownload=1;
+EnableMmwlLogging=0;
+TransferMode=0;
+IsFlashConnected=1;
+#END
+
+#
+# power on master arguments, please modify if needed.
+#
+crcType=1;
+ackTimeout=50000;
+#END
+
+#
+# channel config parameters
+#
+channelTx=7;
+channelRx=15;
+cascading=0;
+#END
+
+#
+# ADC out config parameters
+#
+adcBits=2;
+adcFormat=2;
+#END
+
+#
+# DATA format config parameters
+#
+rxChanEn=15;
+adcBitsD=2;
+adcFmt=1;
+iqSwapSel=0;
+chInterleave=0;
+#END
+
+#
+# Low power config parameters
+#
+anaCfg=0;
+lpAdcMode=0;
+#END
+
+#
+# Data Path config parameters
+#
+intfSel=1;
+transferFmtPkt0=1;
+transferFmtPkt1=0;
+cqConfig=2;
+cq0TransSize=64;
+cq1TransSize=64;
+cq2TransSize=64;
+#END
+
+#
+# LVDS clock config parameters
+#
+laneClk=1;
+dataRate=1;
+#END
+
+#
+# SET HSI clock parameters
+#
+hsiClk=9
+#END
+
+#
+# LANE config parameters
+#
+laneEn=15;
+#END
+
+#
+# LVDS Lane Config parameters
+#
+laneFmtMap=0;
+laneParamCfg=1;
+#END
+
+#
+# Programmable Filter config parameters
+#
+profileId=0;
+coeffStartIdx=0;
+progFiltLen=14;
+progFiltFreqShift=100;
+#END
+
+#
+# Profile config parameters
+#
+profileId=0;
+pfVcoSelect=2;
+startFreqConst=1483851548;
+idleTimeConst=700;
+adcStartTimeConst=700;
+rampEndTime=2500;
+txOutPowerBackoffCode=0;
+txPhaseShifter=0;
+freqSlopeConst=-2071;
+txStartTime=100;
+numAdcSamples=256;
+digOutSampleRate=15000;
+hpfCornerFreq1=0;
+hpfCornerFreq2=0;
+rxGain=160;
+#END
+
+#
+# Chirp Configuration parameters
+#
+chirpStartIdx=0;
+chirpEndIdx=0;
+profileIdCPCFG=0;
+startFreqVar=0;
+freqSlopeVar=0;
+idleTimeVar=0;
+adcStartTimeVar=0;
+txEnable=1;
+#END
+
+#
+# Chirp Configuration parameters
+#
+chirpStartIdx=1;
+chirpEndIdx=1;
+profileIdCPCFG=0;
+startFreqVar=0;
+freqSlopeVar=0;
+idleTimeVar=0;
+adcStartTimeVar=0;
+txEnable=2;
+#END
+
+#
+# Chirp Configuration parameters
+#
+chirpStartIdx=2;
+chirpEndIdx=2;
+profileIdCPCFG=0;
+startFreqVar=0;
+freqSlopeVar=0;
+idleTimeVar=0;
+adcStartTimeVar=0;
+txEnable=4;
+#END
+
+#
+# Frame configuration parameters
+#
+chirpStartIdxFCF=0;
+chirpEndIdxFCF=2;
+frameCount=50;
+loopCount=128;
+periodicity=4000000;
+triggerDelay=0;
+numAdcSamples=512;
+triggerSelect=1;
+#END

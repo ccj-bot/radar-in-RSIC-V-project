@@ -1,0 +1,28 @@
+{
+  "schema": "nx-radar-generated-profile/v1",
+  "profile_name": "tx012-rx3-bin120-contract",
+  "generated_at": "2026-07-19T09:14:41.709568+00:00",
+  "radar_template": "/home/ysy/nx_radar/legacy/pyRadar-main/configFiles/mmwaveconfig_0508_30f128_safe.txt",
+  "dca_template": "/home/ysy/nx_radar/legacy/pyRadar-main/configFiles/cf.json",
+  "generated_radar_config": "/home/ysy/nx_radar/config/profiles/generated/tx012-rx3-bin120-contract/mmwave.cfg",
+  "generated_dca_config": "/home/ysy/nx_radar/config/profiles/generated/tx012-rx3-bin120-contract/dca1000.json",
+  "applied_values": {
+    "radar_profile0_adc_samples": 1024,
+    "radar_frame_loop_count": 40,
+    "radar_frame_periodicity_ticks": 6666667,
+    "radar_channel_rx_mask": 7,
+    "radar_channel_tx_mask": 7,
+    "radar_lvds_lane_mask": 15,
+    "radar_lvds_data_rate_code": 1,
+    "dca_packet_delay_us": 5,
+    "radar_chirp_tx_sequence": [
+      0,
+      1,
+      2
+    ]
+  },
+  "sha256": {
+    "radar": "ab66bb6a241b7c53b2cfb10efe89173157f9dfadba1d9f700bea405a7aac78f4",
+    "dca": "40b7acde605572a1379daa8590340e190068f0e914901f6dfda23ba117dce895"
+  }
+}

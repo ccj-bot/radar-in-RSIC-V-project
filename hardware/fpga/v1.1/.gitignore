@@ -1,0 +1,9 @@
+/output/
+/vivado/
+/.Xil/
+__pycache__/
+*.jou
+*.log
+*.vvp
+!data/
+!data/**

@@ -1,0 +1,10 @@
+{
+  "dataPort": 4098,
+  "dataIP": "192.168.33.30",
+  "configPort": 4096,
+  "configIP": "192.168.33.180",
+  "fileBasePath": "C:\\radar_raw",
+  "filePrefix": "adc_data",
+  "maxRecFileSize": 1024,
+  "udpReorder": 0
+}

@@ -1,0 +1,149 @@
+[
+  {
+    "deb": "runtime/debs/libblas3_3.12.1-7ubuntu1_riscv64.deb",
+    "Package": "libblas3",
+    "Version": "3.12.1-7ubuntu1",
+    "Architecture": "riscv64",
+    "sha256": "d1ef078f9219bc720c7b0a1d968b2ae45156b5ae8be665e4b3ae7516ea936752"
+  },
+  {
+    "deb": "runtime/debs/libgfortran5_16-20260226-1ubuntu1_riscv64.deb",
+    "Package": "libgfortran5",
+    "Version": "16-20260226-1ubuntu1",
+    "Architecture": "riscv64",
+    "sha256": "5c39d48438ea4f89f7bb2532fa44586f005df85104ec481b8f4400aeb96e2b15"
+  },
+  {
+    "deb": "runtime/debs/liblapack3_3.12.1-7ubuntu1_riscv64.deb",
+    "Package": "liblapack3",
+    "Version": "3.12.1-7ubuntu1",
+    "Architecture": "riscv64",
+    "sha256": "56117ab66171616e6f6d28aa58d937e21842ce5274b19dd7cc588fbfc9e1e4f3"
+  },
+  {
+    "deb": "runtime/debs/libopencv-core-dev_4.10.0+dfsg-7ubuntu5_riscv64.deb",
+    "Package": "libopencv-core-dev",
+    "Version": "4.10.0+dfsg-7ubuntu5",
+    "Architecture": "riscv64",
+    "sha256": "72ad02519c702f0d078f7d8940f75a9b168d1bc921a04982a42dcf44a3b6c04d"
+  },
+  {
+    "deb": "runtime/debs/libopencv-core410_4.10.0+dfsg-7ubuntu5_riscv64.deb",
+    "Package": "libopencv-core410",
+    "Version": "4.10.0+dfsg-7ubuntu5",
+    "Architecture": "riscv64",
+    "sha256": "7d993ab84ac95eabd51886126424655b9875650e8bb3a6d253cdde4eb990dc7c"
+  },
+  {
+    "deb": "runtime/debs/libopencv-imgproc-dev_4.10.0+dfsg-7ubuntu5_riscv64.deb",
+    "Package": "libopencv-imgproc-dev",
+    "Version": "4.10.0+dfsg-7ubuntu5",
+    "Architecture": "riscv64",
+    "sha256": "ba40fd62b5bd224d0c93d6c28ca99fbb98fc180a7da6c5c1f57928594d1b0c9b"
+  },
+  {
+    "deb": "runtime/debs/libopencv-imgproc410_4.10.0+dfsg-7ubuntu5_riscv64.deb",
+    "Package": "libopencv-imgproc410",
+    "Version": "4.10.0+dfsg-7ubuntu5",
+    "Architecture": "riscv64",
+    "sha256": "232769c31acff5734a87ec192b0aa2c66eec56a9647c0b469b5e59c34e70d7cb"
+  },
+  {
+    "deb": "runtime/debs/libtbb12_2022.3.0-2_riscv64.deb",
+    "Package": "libtbb12",
+    "Version": "2022.3.0-2",
+    "Architecture": "riscv64",
+    "sha256": "835a7e38ef2e432981efec94d0c2b5e79973d86d6fd2fa05945fc69044a99d4c"
+  },
+  {
+    "deb": "runtime/debs/libtbbbind-2-5_2022.3.0-2_riscv64.deb",
+    "Package": "libtbbbind-2-5",
+    "Version": "2022.3.0-2",
+    "Architecture": "riscv64",
+    "sha256": "aaede981b1a3aef5856621d21d0566a7b0449b1583ddc512efe4f407cd020425"
+  },
+  {
+    "deb": "runtime/debs/libtbbmalloc2_2022.3.0-2_riscv64.deb",
+    "Package": "libtbbmalloc2",
+    "Version": "2022.3.0-2",
+    "Architecture": "riscv64",
+    "sha256": "5cff3b68ae2a8b718202e0f15d375d98b06a00502d7b80f2b32878d11515a755"
+  },
+  {
+    "deb": "runtime/debs/python3-coloredlogs_15.0.1-1build1_all.deb",
+    "Package": "python3-coloredlogs",
+    "Version": "15.0.1-1build1",
+    "Architecture": "all",
+    "sha256": "ee954cc18510dc7db94bac8068332999e10fad063ba07756788c90bc2065c811"
+  },
+  {
+    "deb": "runtime/debs/python3-flatbuffers_23.5.26+dfsg-4build1_all.deb",
+    "Package": "python3-flatbuffers",
+    "Version": "23.5.26+dfsg-4build1",
+    "Architecture": "all",
+    "sha256": "bce8e01bc69c17458408637c74ded264278848551351b1d13a14e25684e05743"
+  },
+  {
+    "deb": "runtime/debs/python3-humanfriendly_10.0-6build1_all.deb",
+    "Package": "python3-humanfriendly",
+    "Version": "10.0-6build1",
+    "Architecture": "all",
+    "sha256": "f856c691acaa74709cb75e40a904ef4f2a99570bc09a14aa74c8714b1aebe32e"
+  },
+  {
+    "deb": "runtime/debs/python3-mpmath_1.3.0-2_all.deb",
+    "Package": "python3-mpmath",
+    "Version": "1.3.0-2",
+    "Architecture": "all",
+    "sha256": "03eebbb83fa18ff961e47203f9f2f770ecf9bb7dbc123f04a3253b59e006e0c1"
+  },
+  {
+    "deb": "runtime/debs/python3-numpy_1%3a2.3.5+ds-3ubuntu1_riscv64.deb",
+    "Package": "python3-numpy",
+    "Version": "1:2.3.5+ds-3ubuntu1",
+    "Architecture": "riscv64",
+    "sha256": "cab379761a7a12b2313cc408191965ed02ad6f2f17264ed3e62783c91f110703"
+  },
+  {
+    "deb": "runtime/debs/python3-onnxruntime_1.23.2+dfsg-6ubuntu1_riscv64.deb",
+    "Package": "python3-onnxruntime",
+    "Version": "1.23.2+dfsg-6ubuntu1",
+    "Architecture": "riscv64",
+    "sha256": "442b80c51767a6640e23eab8d6d68fb2b8531733214a36f6e5b20a7c12b4e035"
+  },
+  {
+    "deb": "runtime/debs/python3-protobuf_3.21.12-15ubuntu1_riscv64.deb",
+    "Package": "python3-protobuf",
+    "Version": "3.21.12-15ubuntu1",
+    "Architecture": "riscv64",
+    "sha256": "d476836848352663d4d82dcfff6fa0341ebc9787397da70becf204fde0de8551"
+  },
+  {
+    "deb": "runtime/debs/python3-sympy_1.14.0-2_all.deb",
+    "Package": "python3-sympy",
+    "Version": "1.14.0-2",
+    "Architecture": "all",
+    "sha256": "82fdfadeb2949bf7d235750279c84ec840f69005579e77673a4140a603180150"
+  },
+  {
+    "deb": "runtime/vendor/debs/python3-spacemit-ort_2.0.7+2_riscv64.deb",
+    "Package": "python3-spacemit-ort",
+    "Version": "2.0.7+2",
+    "Architecture": "riscv64",
+    "sha256": "d367f64ceee717b6f240939d80007f9bc4f64726909589185704e6570b6e6902"
+  },
+  {
+    "deb": "runtime/vendor/debs/spacemit-onnxruntime_2.0.7+2_riscv64.deb",
+    "Package": "spacemit-onnxruntime",
+    "Version": "2.0.7+2",
+    "Architecture": "riscv64",
+    "sha256": "9da8dc03776dbaaff63a7ad78bd4f39a25d298d1ec73a64b5399034f27887fb6"
+  },
+  {
+    "deb": "runtime/vendor/debs/spacemit-runtime_0.6.3_riscv64.deb",
+    "Package": "spacemit-runtime",
+    "Version": "0.6.3",
+    "Architecture": "riscv64",
+    "sha256": "4f63e30badfa8e02774e8b8d3415ecdaa1c2b2c921ec086f04fada0b534cee74"
+  }
+]

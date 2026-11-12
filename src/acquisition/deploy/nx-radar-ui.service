@@ -1,0 +1,18 @@
+[Unit]
+Description=NX Radar acquisition console
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ysy/nx_radar
+Environment=PYTHONPATH=/home/ysy/nx_radar:/home/ysy/nx_radar/fpga_udp:/home/ysy/nx_radar/.python_deps:/home/ysy/nx_radar/legacy/pyRadar-main
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/usr/bin/python3 -m radar_stack.web.server --root /home/ysy/nx_radar --port 8088
+Restart=on-failure
+RestartSec=3
+# Capture is an independent process and must survive UI service restarts.
+KillMode=process
+TimeoutStopSec=10
+
+[Install]
+WantedBy=default.target

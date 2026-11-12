@@ -1,0 +1,146 @@
+{
+  "title": {
+    "zh": "AWR2243 单 TX 均匀帧率采集配置",
+    "en": "AWR2243 Single-TX Rate-Optimized Capture Profile"
+  },
+  "instructions": {
+    "zh": "实验人员主要填写目标帧率和用途。帧周期、chirp 空闲时间、物理 bin 大小和吞吐预算由 radarctl 自动同步；不要直接修改 generated 文件。正式配置建议不超过 35 fps，36 fps 仅用于压力测试。",
+    "en": "Operators normally edit target frame rate and usage. radarctl derives frame ticks, chirp idle time, frame-aligned bins, and transport budget. Do not edit generated files. Use at most 35 fps for formal work; 36 fps is stress-only."
+  },
+  "fields": {
+    "profile_name": {
+      "zh": "配置名称",
+      "en": "Profile name",
+      "value": "continuous-20261021-144031-121018"
+    },
+    "profile_usage": {
+      "zh": "配置用途",
+      "en": "Profile usage",
+      "value": "formal"
+    },
+    "radar_config_template": {
+      "zh": "雷达配置模板",
+      "en": "Radar config template",
+      "value": "legacy/pyRadar-main/configFiles/mmwaveconfig_0508_30f128_safe.txt"
+    },
+    "dca_config_template": {
+      "zh": "DCA 配置模板",
+      "en": "DCA config template",
+      "value": "legacy/pyRadar-main/configFiles/cf.json"
+    },
+    "radar_config": {
+      "zh": "自动生成雷达配置",
+      "en": "Generated radar configuration",
+      "value": "config/profiles/generated/continuous-20261021-144031-121018/mmwave.cfg"
+    },
+    "dca_config": {
+      "zh": "自动生成 DCA 配置",
+      "en": "Generated DCA configuration",
+      "value": "config/profiles/generated/continuous-20261021-144031-121018/dca1000.json"
+    },
+    "capture_mode": {
+      "zh": "采集模式",
+      "en": "Capture mode",
+      "value": "manual_until_disk_reserve"
+    },
+    "frames": {
+      "zh": "有限帧数",
+      "en": "Finite frames",
+      "value": null
+    },
+    "stop_after_gib": {
+      "zh": "单次原始数据上限 GiB",
+      "en": "Raw-data cap per session GiB",
+      "value": 0
+    },
+    "reserve_disk_gib": {
+      "zh": "保留磁盘空间 GiB",
+      "en": "Reserved disk GiB",
+      "value": 10.0
+    },
+    "physical_segment_frames": {
+      "zh": "每个物理 bin 的完整雷达帧数",
+      "en": "Whole radar frames per physical bin",
+      "value": 1
+    },
+    "physical_segment_pulses": {
+      "zh": "每个物理 bin 的 chirp 数（由帧数自动推导）",
+      "en": "Chirps per physical bin (derived from whole frames)",
+      "value": 128
+    },
+    "reconstruction_windows": {
+      "zh": "重建窗口 chirp 数",
+      "en": "Reconstruction window chirps",
+      "value": [
+        128
+      ]
+    },
+    "radar_target_frame_rate_hz": {
+      "zh": "目标物理帧率 Hz",
+      "en": "Target physical frame rate Hz",
+      "value": 30.0
+    },
+    "radar_target_frame_blank_time_ms": {
+      "zh": "目标帧间空白 ms",
+      "en": "Target inter-frame blank time ms",
+      "value": 0.5
+    },
+    "radar_profile0_adc_samples": {
+      "zh": "ADC 采样点数",
+      "en": "ADC samples",
+      "value": 1024
+    },
+    "radar_profile0_ramp_end_time_ticks": {
+      "zh": "Ramp 时长 tick",
+      "en": "Ramp-end ticks",
+      "value": 5000
+    },
+    "radar_profile0_idle_time_ticks": {
+      "zh": "Idle 时长 tick（自动）",
+      "en": "Idle-time ticks (derived)",
+      "value": 20651
+    },
+    "radar_frame_loop_count": {
+      "zh": "每帧 chirp 循环数",
+      "en": "Chirp loops per frame",
+      "value": 128
+    },
+    "radar_chirp_tx_sequence": {
+      "zh": "TX 时分序列",
+      "en": "TDM TX sequence",
+      "value": [
+        0
+      ]
+    },
+    "radar_frame_periodicity_ticks": {
+      "zh": "帧周期 5 ns tick（自动）",
+      "en": "Frame period in 5 ns ticks (derived)",
+      "value": 6666667
+    },
+    "radar_channel_rx_mask": {
+      "zh": "RX 掩码",
+      "en": "RX mask",
+      "value": 15
+    },
+    "radar_channel_tx_mask": {
+      "zh": "TX 掩码",
+      "en": "TX mask",
+      "value": 7
+    },
+    "radar_lvds_lane_mask": {
+      "zh": "LVDS lane 掩码",
+      "en": "LVDS lane mask",
+      "value": 15
+    },
+    "radar_lvds_data_rate_code": {
+      "zh": "LVDS 数据率代码",
+      "en": "LVDS data-rate code",
+      "value": 1
+    },
+    "dca_packet_delay_us": {
+      "zh": "DCA 发包间隔 us",
+      "en": "DCA packet delay us",
+      "value": 5.0
+    }
+  }
+}

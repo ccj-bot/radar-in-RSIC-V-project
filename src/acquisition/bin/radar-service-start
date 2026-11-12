@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+exec systemctl --user start nx-radar-ui.service

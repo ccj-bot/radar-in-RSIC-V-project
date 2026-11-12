@@ -1,0 +1,38 @@
+{
+  "title": {
+    "zh": "AWR2243 三发四收 TDM-MIMO 实验配置",
+    "en": "AWR2243 3TX x 4RX TDM-MIMO Experimental Profile"
+  },
+  "instructions": {
+    "zh": "按 TX0、TX1、TX2 时分发射，每帧 42 个循环，共 126 chirp，可形成 12 个虚拟通道。该配置只能先做 10 帧真实数据验证；当前单通道即时预览不会解释为 MIMO 成像。",
+    "en": "TDM sequence TX0, TX1, TX2 with 42 loops gives 126 chirps and up to 12 virtual channels. Run bounded stream validation first. The current single-channel live preview does not claim MIMO imaging."
+  },
+  "fields": {
+    "profile_name": {"zh": "配置名称", "en": "Profile name", "value": "mimo3tx42-uniform"},
+    "profile_usage": {"zh": "配置用途", "en": "Profile usage", "value": "mimo_experimental"},
+    "radar_config_template": {"zh": "雷达配置模板", "en": "Radar config template", "value": "legacy/pyRadar-main/configFiles/mmwaveconfig_0508_30f128_safe.txt"},
+    "dca_config_template": {"zh": "DCA 配置模板", "en": "DCA config template", "value": "legacy/pyRadar-main/configFiles/cf.json"},
+    "radar_config": {"zh": "自动生成雷达配置", "en": "Generated radar configuration", "value": "config/profiles/generated/mimo3tx42-uniform/mmwave.cfg"},
+    "dca_config": {"zh": "自动生成 DCA 配置", "en": "Generated DCA configuration", "value": "config/profiles/generated/mimo3tx42-uniform/dca1000.json"},
+    "capture_mode": {"zh": "采集模式", "en": "Capture mode", "value": "manual_stop_with_data_cap"},
+    "frames": {"zh": "有限帧数", "en": "Finite frames", "value": null},
+    "stop_after_gib": {"zh": "单次原始数据上限 GiB", "en": "Raw-data cap per session GiB", "value": 50},
+    "reserve_disk_gib": {"zh": "保留磁盘空间 GiB", "en": "Reserved disk GiB", "value": 100},
+    "physical_segment_frames": {"zh": "每个物理 bin 的完整雷达帧数", "en": "Whole radar frames per physical bin", "value": 1},
+    "physical_segment_pulses": {"zh": "每个物理 bin 的 chirp 数（自动）", "en": "Chirps per physical bin (derived)", "value": 126},
+    "reconstruction_windows": {"zh": "重建窗口 chirp 数", "en": "Reconstruction window chirps", "value": [126, 252, 504]},
+    "radar_target_frame_rate_hz": {"zh": "目标物理帧率 Hz", "en": "Target physical frame rate Hz", "value": 30},
+    "radar_target_frame_blank_time_ms": {"zh": "目标帧间空白 ms", "en": "Target inter-frame blank time ms", "value": 0.5},
+    "radar_profile0_adc_samples": {"zh": "ADC 采样点数", "en": "ADC samples", "value": 1024},
+    "radar_profile0_ramp_end_time_ticks": {"zh": "Ramp 时长 tick", "en": "Ramp-end ticks", "value": 6000},
+    "radar_profile0_idle_time_ticks": {"zh": "Idle 时长 tick（自动）", "en": "Idle-time ticks (derived)", "value": 20455},
+    "radar_frame_loop_count": {"zh": "每帧 TDM 循环数", "en": "TDM loops per frame", "value": 42},
+    "radar_chirp_tx_sequence": {"zh": "TX 时分序列", "en": "TDM TX sequence", "value": [0, 1, 2]},
+    "radar_frame_periodicity_ticks": {"zh": "帧周期 5 ns tick（自动）", "en": "Frame period in 5 ns ticks (derived)", "value": 6666667},
+    "radar_channel_rx_mask": {"zh": "RX 掩码（4RX）", "en": "RX mask (4RX)", "value": 15},
+    "radar_channel_tx_mask": {"zh": "TX 掩码（3TX）", "en": "TX mask (3TX)", "value": 7},
+    "radar_lvds_lane_mask": {"zh": "LVDS lane 掩码", "en": "LVDS lane mask", "value": 15},
+    "radar_lvds_data_rate_code": {"zh": "LVDS 数据率代码", "en": "LVDS data-rate code", "value": 1},
+    "dca_packet_delay_us": {"zh": "DCA 发包间隔 us", "en": "DCA packet delay us", "value": 5}
+  }
+}

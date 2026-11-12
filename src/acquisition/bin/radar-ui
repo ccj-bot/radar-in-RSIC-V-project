@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
+export PYTHONPATH="/home/ysy/nx_radar${PYTHONPATH:+:$PYTHONPATH}"
+export PYTHONDONTWRITEBYTECODE=1
+exec /usr/bin/python3 -m radar_stack.web.desktop --root /home/ysy/nx_radar "$@"

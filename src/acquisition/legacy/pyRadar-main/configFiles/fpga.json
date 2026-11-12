@@ -1,0 +1,6 @@
+{
+  "dataTransferMode": 1,
+  "dataFormatMode": 1,
+  "laneEn": 15,
+  "packetDelay_us": 50
+}

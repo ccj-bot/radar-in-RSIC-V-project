@@ -1,0 +1,30 @@
+{
+  "title": {"zh": "AWR2243 + DCA1000 联动配置填写表", "en": "AWR2243 + DCA1000 Synced Configuration Form"},
+  "instructions": {
+    "zh": "只修改 value。保存或修改后会自动生成专用 mmWave.cfg、dca1000.json 和采集计划；不要直接编辑 generated 文件。",
+    "en": "Edit only value fields. Saving changes regenerates mmWave.cfg, dca1000.json, and the capture plan; do not edit generated files directly."
+  },
+  "fields": {
+    "profile_name": {"zh": "配置名称", "en": "Profile name", "value": "awr2243_30f128_synced"},
+    "radar_config_template": {"zh": "雷达配置模板（只读来源）", "en": "Radar config template (read-only source)", "value": "legacy/pyRadar-main/configFiles/mmwaveconfig_0508_30f128_safe.txt"},
+    "dca_config_template": {"zh": "DCA 配置模板（只读来源）", "en": "DCA config template (read-only source)", "value": "legacy/pyRadar-main/configFiles/cf.json"},
+    "radar_config": {"zh": "自动生成的雷达配置", "en": "Generated radar configuration", "value": "legacy/pyRadar-main/configFiles/mmwaveconfig_0508_30f128_safe.txt"},
+    "dca_config": {"zh": "自动生成的 DCA 配置", "en": "Generated DCA configuration", "value": "legacy/pyRadar-main/configFiles/cf.json"},
+    "capture_mode": {"zh": "采集模式", "en": "Capture mode", "value": "manual_stop_with_data_cap"},
+    "frames": {"zh": "有限帧数（仅有限帧模式）", "en": "Finite frame count (finite mode only)", "value": 91},
+    "stop_after_gib": {"zh": "本次最多原始数据 GiB", "en": "Maximum raw GiB for this session", "value": 50},
+    "reserve_disk_gib": {"zh": "保留磁盘空间 GiB", "en": "Reserved disk GiB", "value": 100},
+    "physical_segment_frames": {"zh": "每个物理 bin 的帧数（自动对齐）", "en": "Radar frames per physical bin (frame-aligned)", "value": 1},
+    "physical_segment_pulses": {"zh": "每个物理 bin 的 chirp 数（由帧数自动推导）", "en": "Chirps per physical bin (derived from whole frames)", "value": 128},
+    "reconstruction_windows": {"zh": "重建窗口 chirp 数", "en": "Reconstruction window chirps", "value": [256, 500]},
+    "radar_profile0_adc_samples": {"zh": "ADC 采样点数（profile 0）", "en": "ADC samples (profile 0)", "value": 1024},
+    "radar_frame_loop_count": {"zh": "每帧 chirp 循环数", "en": "Chirp loop count per frame", "value": 128},
+    "radar_chirp_tx_sequence": {"zh": "一个 chirp 循环内的 TX 天线顺序（0/1/2）", "en": "TX antenna sequence within one chirp cycle (0/1/2)", "value": [0]},
+    "radar_frame_periodicity_ticks": {"zh": "帧周期 5ns tick", "en": "Frame periodicity in 5 ns ticks", "value": 6666667},
+    "radar_channel_rx_mask": {"zh": "接收天线掩码", "en": "RX channel mask", "value": 15},
+    "radar_channel_tx_mask": {"zh": "可用发射天线掩码", "en": "Enabled TX antenna mask", "value": 7},
+    "radar_lvds_lane_mask": {"zh": "LVDS lane 掩码", "en": "LVDS lane enable mask", "value": 15},
+    "radar_lvds_data_rate_code": {"zh": "LVDS 数据率代码", "en": "LVDS data-rate code", "value": 1},
+    "dca_packet_delay_us": {"zh": "DCA UDP 发包间隔（微秒）", "en": "DCA UDP packet delay (microseconds)", "value": 5}
+  }
+}

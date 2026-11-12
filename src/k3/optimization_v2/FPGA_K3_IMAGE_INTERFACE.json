@@ -1,0 +1,26 @@
+{
+  "schema": "radarbrain.fpga-k3.image.v1-draft",
+  "status": "software reference interface for later hardware alignment",
+  "architecture": ["Radar raw IQ", "FPGA range compression and SAR RDA", "FPGA output image plus metadata", "K3 image adapter and FP16 inference", "K3 result display"],
+  "transport": "to be selected with the existing hardware team",
+  "metadata_required": {
+    "frame_id": "uint64 monotonically increasing",
+    "first_chirp_timestamp_ns": "int64 with declared clock_domain and synchronization status",
+    "last_chirp_timestamp_ns": "int64",
+    "algorithm": "SAR_RDA or RANGE_DOPPLER; never silently interchange",
+    "image_width": "uint32",
+    "image_height": "uint32",
+    "row_stride_bytes": "uint32",
+    "pixel_encoding": "RGB8_READY_FOR_MODEL, POWER_F32_LE or fixed-point format with explicit scale",
+    "coordinate_axes": "For SAR: along-track and broadside range in metres, origin and spacing; for RD: beat range and Doppler Hz",
+    "orientation": "origin corner, axis directions and rotation",
+    "valid_region": "image support or mask with geometry",
+    "intensity_mapping_id": "versioned log compression, dB limits, palette and normalization reference",
+    "acquisition": "ADC count, chirp count, per-chirp time schedule, TX/RX, sample rate, chirp slope, frequency reference",
+    "motion": "trajectory or speed, geometry reference and calibration version used for imaging",
+    "integrity": "payload size and checksum; dropped or incomplete aperture flag"
+  },
+  "initial_adapter": "Use existing 640 letterbox RGB/255 inference preprocessing. Validate image mapping against existing SAR model inputs before applying detector to new FPGA image products.",
+  "fpga_processing_stages": ["IQ decode and optional calibration", "Range FFT or matched filtering", "Azimuth FFT", "RCMC interpolation", "Azimuth matched filter", "Azimuth IFFT", "Amplitude mapping or power output"],
+  "software_reference": "optimization_v2/app/compare_rda_bp.py provides RDA and RCMC with retained complex output. It is not RTL or synthesized FPGA firmware."
+}

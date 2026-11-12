@@ -1,0 +1,37 @@
+{
+  "config_path": "/home/radar/pyRadar-main/configFiles/generated/sar_1tx4rx_2048s_128p_30fps__20260702_205634.txt",
+  "channel_tx_mask": 7,
+  "channel_rx_mask": 15,
+  "effective_tx_sequence": [],
+  "effective_rx_channels": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "adc_samples": 2048,
+  "chirp_start": 0,
+  "chirp_end": null,
+  "loop_count": 128,
+  "chirps_per_frame": null,
+  "frame_periodicity_ms": 33.333333,
+  "frame_rate_hz": 30.0000003,
+  "rx_count": 4,
+  "tx_count_effective": 0,
+  "frame_bytes": null,
+  "estimated_raw_rate_MBps": null,
+  "risk_level": "unknown",
+  "warnings": [
+    "frame chirpStartIdxFCF/chirpEndIdxFCF not found",
+    "chirps_per_frame could not be computed",
+    "framePeriodicity not found; derived frame_periodicity_ms from subFramePeriodicity assuming ns",
+    "frame_bytes could not be computed from parsed fields"
+  ],
+  "raw_commands_count": 242,
+  "profile_name": "sar_1tx4rx_2048s_128p_30fps",
+  "template_config": "/home/radar/pyRadar-main/configFiles/mmwaveconfig_0508_30f128_safe.txt",
+  "generated_config": "/home/radar/pyRadar-main/configFiles/generated/sar_1tx4rx_2048s_128p_30fps__20260702_205634.txt",
+  "segment_pulses": 128,
+  "segment_bytes": null,
+  "generator_warnings": []
+}

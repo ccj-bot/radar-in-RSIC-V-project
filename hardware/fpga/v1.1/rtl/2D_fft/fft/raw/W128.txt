@@ -1,0 +1,512 @@
+            0: begin
+                factor_real = 16'b0100000000000000;
+                factor_imag = 16'b0000000000000000;
+            end
+            1: begin
+                factor_real = 16'b0011111111101100;
+                factor_imag = 16'b1111110011011100;
+            end
+            2: begin
+                factor_real = 16'b0011111110110001;
+                factor_imag = 16'b1111100110111010;
+            end
+            3: begin
+                factor_real = 16'b0011111101001111;
+                factor_imag = 16'b1111011010011100;
+            end
+            4: begin
+                factor_real = 16'b0011111011000101;
+                factor_imag = 16'b1111001110000100;
+            end
+            5: begin
+                factor_real = 16'b0011111000010101;
+                factor_imag = 16'b1111000001110011;
+            end
+            6: begin
+                factor_real = 16'b0011110100111111;
+                factor_imag = 16'b1110110101101100;
+            end
+            7: begin
+                factor_real = 16'b0011110001000010;
+                factor_imag = 16'b1110101001110000;
+            end
+            8: begin
+                factor_real = 16'b0011101100100001;
+                factor_imag = 16'b1110011110000010;
+            end
+            9: begin
+                factor_real = 16'b0011100111011011;
+                factor_imag = 16'b1110010010100011;
+            end
+            10: begin
+                factor_real = 16'b0011100001110001;
+                factor_imag = 16'b1110000111010101;
+            end
+            11: begin
+                factor_real = 16'b0011011011100101;
+                factor_imag = 16'b1101111100011001;
+            end
+            12: begin
+                factor_real = 16'b0011010100110111;
+                factor_imag = 16'b1101110001110010;
+            end
+            13: begin
+                factor_real = 16'b0011001101101000;
+                factor_imag = 16'b1101100111100000;
+            end
+            14: begin
+                factor_real = 16'b0011000101111001;
+                factor_imag = 16'b1101011101100110;
+            end
+            15: begin
+                factor_real = 16'b0010111101101100;
+                factor_imag = 16'b1101010100000101;
+            end
+            16: begin
+                factor_real = 16'b0010110101000001;
+                factor_imag = 16'b1101001010111111;
+            end
+            17: begin
+                factor_real = 16'b0010101011111011;
+                factor_imag = 16'b1101000010010100;
+            end
+            18: begin
+                factor_real = 16'b0010100010011010;
+                factor_imag = 16'b1100111010000111;
+            end
+            19: begin
+                factor_real = 16'b0010011000100000;
+                factor_imag = 16'b1100110010011000;
+            end
+            20: begin
+                factor_real = 16'b0010001110001110;
+                factor_imag = 16'b1100101011001001;
+            end
+            21: begin
+                factor_real = 16'b0010000011100111;
+                factor_imag = 16'b1100100100011011;
+            end
+            22: begin
+                factor_real = 16'b0001111000101011;
+                factor_imag = 16'b1100011110001111;
+            end
+            23: begin
+                factor_real = 16'b0001101101011101;
+                factor_imag = 16'b1100011000100101;
+            end
+            24: begin
+                factor_real = 16'b0001100001111110;
+                factor_imag = 16'b1100010011011111;
+            end
+            25: begin
+                factor_real = 16'b0001010110010000;
+                factor_imag = 16'b1100001110111110;
+            end
+            26: begin
+                factor_real = 16'b0001001010010100;
+                factor_imag = 16'b1100001011000001;
+            end
+            27: begin
+                factor_real = 16'b0000111110001101;
+                factor_imag = 16'b1100000111101011;
+            end
+            28: begin
+                factor_real = 16'b0000110001111100;
+                factor_imag = 16'b1100000100111011;
+            end
+            29: begin
+                factor_real = 16'b0000100101100100;
+                factor_imag = 16'b1100000010110001;
+            end
+            30: begin
+                factor_real = 16'b0000011001000110;
+                factor_imag = 16'b1100000001001111;
+            end
+            31: begin
+                factor_real = 16'b0000001100100100;
+                factor_imag = 16'b1100000000010100;
+            end
+            32: begin
+                factor_real = 16'b0000000000000000;
+                factor_imag = 16'b1100000000000000;
+            end
+            33: begin
+                factor_real = 16'b1111110011011100;
+                factor_imag = 16'b1100000000010100;
+            end
+            34: begin
+                factor_real = 16'b1111100110111010;
+                factor_imag = 16'b1100000001001111;
+            end
+            35: begin
+                factor_real = 16'b1111011010011100;
+                factor_imag = 16'b1100000010110001;
+            end
+            36: begin
+                factor_real = 16'b1111001110000100;
+                factor_imag = 16'b1100000100111011;
+            end
+            37: begin
+                factor_real = 16'b1111000001110011;
+                factor_imag = 16'b1100000111101011;
+            end
+            38: begin
+                factor_real = 16'b1110110101101100;
+                factor_imag = 16'b1100001011000001;
+            end
+            39: begin
+                factor_real = 16'b1110101001110000;
+                factor_imag = 16'b1100001110111110;
+            end
+            40: begin
+                factor_real = 16'b1110011110000010;
+                factor_imag = 16'b1100010011011111;
+            end
+            41: begin
+                factor_real = 16'b1110010010100011;
+                factor_imag = 16'b1100011000100101;
+            end
+            42: begin
+                factor_real = 16'b1110000111010101;
+                factor_imag = 16'b1100011110001111;
+            end
+            43: begin
+                factor_real = 16'b1101111100011001;
+                factor_imag = 16'b1100100100011011;
+            end
+            44: begin
+                factor_real = 16'b1101110001110010;
+                factor_imag = 16'b1100101011001001;
+            end
+            45: begin
+                factor_real = 16'b1101100111100000;
+                factor_imag = 16'b1100110010011000;
+            end
+            46: begin
+                factor_real = 16'b1101011101100110;
+                factor_imag = 16'b1100111010000111;
+            end
+            47: begin
+                factor_real = 16'b1101010100000101;
+                factor_imag = 16'b1101000010010100;
+            end
+            48: begin
+                factor_real = 16'b1101001010111111;
+                factor_imag = 16'b1101001010111111;
+            end
+            49: begin
+                factor_real = 16'b1101000010010100;
+                factor_imag = 16'b1101010100000101;
+            end
+            50: begin
+                factor_real = 16'b1100111010000111;
+                factor_imag = 16'b1101011101100110;
+            end
+            51: begin
+                factor_real = 16'b1100110010011000;
+                factor_imag = 16'b1101100111100000;
+            end
+            52: begin
+                factor_real = 16'b1100101011001001;
+                factor_imag = 16'b1101110001110010;
+            end
+            53: begin
+                factor_real = 16'b1100100100011011;
+                factor_imag = 16'b1101111100011001;
+            end
+            54: begin
+                factor_real = 16'b1100011110001111;
+                factor_imag = 16'b1110000111010101;
+            end
+            55: begin
+                factor_real = 16'b1100011000100101;
+                factor_imag = 16'b1110010010100011;
+            end
+            56: begin
+                factor_real = 16'b1100010011011111;
+                factor_imag = 16'b1110011110000010;
+            end
+            57: begin
+                factor_real = 16'b1100001110111110;
+                factor_imag = 16'b1110101001110000;
+            end
+            58: begin
+                factor_real = 16'b1100001011000001;
+                factor_imag = 16'b1110110101101100;
+            end
+            59: begin
+                factor_real = 16'b1100000111101011;
+                factor_imag = 16'b1111000001110011;
+            end
+            60: begin
+                factor_real = 16'b1100000100111011;
+                factor_imag = 16'b1111001110000100;
+            end
+            61: begin
+                factor_real = 16'b1100000010110001;
+                factor_imag = 16'b1111011010011100;
+            end
+            62: begin
+                factor_real = 16'b1100000001001111;
+                factor_imag = 16'b1111100110111010;
+            end
+            63: begin
+                factor_real = 16'b1100000000010100;
+                factor_imag = 16'b1111110011011100;
+            end
+            64: begin
+                factor_real = 16'b1100000000000000;
+                factor_imag = 16'b0000000000000000;
+            end
+            65: begin
+                factor_real = 16'b1100000000010100;
+                factor_imag = 16'b0000001100100100;
+            end
+            66: begin
+                factor_real = 16'b1100000001001111;
+                factor_imag = 16'b0000011001000110;
+            end
+            67: begin
+                factor_real = 16'b1100000010110001;
+                factor_imag = 16'b0000100101100100;
+            end
+            68: begin
+                factor_real = 16'b1100000100111011;
+                factor_imag = 16'b0000110001111100;
+            end
+            69: begin
+                factor_real = 16'b1100000111101011;
+                factor_imag = 16'b0000111110001101;
+            end
+            70: begin
+                factor_real = 16'b1100001011000001;
+                factor_imag = 16'b0001001010010100;
+            end
+            71: begin
+                factor_real = 16'b1100001110111110;
+                factor_imag = 16'b0001010110010000;
+            end
+            72: begin
+                factor_real = 16'b1100010011011111;
+                factor_imag = 16'b0001100001111110;
+            end
+            73: begin
+                factor_real = 16'b1100011000100101;
+                factor_imag = 16'b0001101101011101;
+            end
+            74: begin
+                factor_real = 16'b1100011110001111;
+                factor_imag = 16'b0001111000101011;
+            end
+            75: begin
+                factor_real = 16'b1100100100011011;
+                factor_imag = 16'b0010000011100111;
+            end
+            76: begin
+                factor_real = 16'b1100101011001001;
+                factor_imag = 16'b0010001110001110;
+            end
+            77: begin
+                factor_real = 16'b1100110010011000;
+                factor_imag = 16'b0010011000100000;
+            end
+            78: begin
+                factor_real = 16'b1100111010000111;
+                factor_imag = 16'b0010100010011010;
+            end
+            79: begin
+                factor_real = 16'b1101000010010100;
+                factor_imag = 16'b0010101011111011;
+            end
+            80: begin
+                factor_real = 16'b1101001010111111;
+                factor_imag = 16'b0010110101000001;
+            end
+            81: begin
+                factor_real = 16'b1101010100000101;
+                factor_imag = 16'b0010111101101100;
+            end
+            82: begin
+                factor_real = 16'b1101011101100110;
+                factor_imag = 16'b0011000101111001;
+            end
+            83: begin
+                factor_real = 16'b1101100111100000;
+                factor_imag = 16'b0011001101101000;
+            end
+            84: begin
+                factor_real = 16'b1101110001110010;
+                factor_imag = 16'b0011010100110111;
+            end
+            85: begin
+                factor_real = 16'b1101111100011001;
+                factor_imag = 16'b0011011011100101;
+            end
+            86: begin
+                factor_real = 16'b1110000111010101;
+                factor_imag = 16'b0011100001110001;
+            end
+            87: begin
+                factor_real = 16'b1110010010100011;
+                factor_imag = 16'b0011100111011011;
+            end
+            88: begin
+                factor_real = 16'b1110011110000010;
+                factor_imag = 16'b0011101100100001;
+            end
+            89: begin
+                factor_real = 16'b1110101001110000;
+                factor_imag = 16'b0011110001000010;
+            end
+            90: begin
+                factor_real = 16'b1110110101101100;
+                factor_imag = 16'b0011110100111111;
+            end
+            91: begin
+                factor_real = 16'b1111000001110011;
+                factor_imag = 16'b0011111000010101;
+            end
+            92: begin
+                factor_real = 16'b1111001110000100;
+                factor_imag = 16'b0011111011000101;
+            end
+            93: begin
+                factor_real = 16'b1111011010011100;
+                factor_imag = 16'b0011111101001111;
+            end
+            94: begin
+                factor_real = 16'b1111100110111010;
+                factor_imag = 16'b0011111110110001;
+            end
+            95: begin
+                factor_real = 16'b1111110011011100;
+                factor_imag = 16'b0011111111101100;
+            end
+            96: begin
+                factor_real = 16'b0000000000000000;
+                factor_imag = 16'b0100000000000000;
+            end
+            97: begin
+                factor_real = 16'b0000001100100100;
+                factor_imag = 16'b0011111111101100;
+            end
+            98: begin
+                factor_real = 16'b0000011001000110;
+                factor_imag = 16'b0011111110110001;
+            end
+            99: begin
+                factor_real = 16'b0000100101100100;
+                factor_imag = 16'b0011111101001111;
+            end
+            100: begin
+                factor_real = 16'b0000110001111100;
+                factor_imag = 16'b0011111011000101;
+            end
+            101: begin
+                factor_real = 16'b0000111110001101;
+                factor_imag = 16'b0011111000010101;
+            end
+            102: begin
+                factor_real = 16'b0001001010010100;
+                factor_imag = 16'b0011110100111111;
+            end
+            103: begin
+                factor_real = 16'b0001010110010000;
+                factor_imag = 16'b0011110001000010;
+            end
+            104: begin
+                factor_real = 16'b0001100001111110;
+                factor_imag = 16'b0011101100100001;
+            end
+            105: begin
+                factor_real = 16'b0001101101011101;
+                factor_imag = 16'b0011100111011011;
+            end
+            106: begin
+                factor_real = 16'b0001111000101011;
+                factor_imag = 16'b0011100001110001;
+            end
+            107: begin
+                factor_real = 16'b0010000011100111;
+                factor_imag = 16'b0011011011100101;
+            end
+            108: begin
+                factor_real = 16'b0010001110001110;
+                factor_imag = 16'b0011010100110111;
+            end
+            109: begin
+                factor_real = 16'b0010011000100000;
+                factor_imag = 16'b0011001101101000;
+            end
+            110: begin
+                factor_real = 16'b0010100010011010;
+                factor_imag = 16'b0011000101111001;
+            end
+            111: begin
+                factor_real = 16'b0010101011111011;
+                factor_imag = 16'b0010111101101100;
+            end
+            112: begin
+                factor_real = 16'b0010110101000001;
+                factor_imag = 16'b0010110101000001;
+            end
+            113: begin
+                factor_real = 16'b0010111101101100;
+                factor_imag = 16'b0010101011111011;
+            end
+            114: begin
+                factor_real = 16'b0011000101111001;
+                factor_imag = 16'b0010100010011010;
+            end
+            115: begin
+                factor_real = 16'b0011001101101000;
+                factor_imag = 16'b0010011000100000;
+            end
+            116: begin
+                factor_real = 16'b0011010100110111;
+                factor_imag = 16'b0010001110001110;
+            end
+            117: begin
+                factor_real = 16'b0011011011100101;
+                factor_imag = 16'b0010000011100111;
+            end
+            118: begin
+                factor_real = 16'b0011100001110001;
+                factor_imag = 16'b0001111000101011;
+            end
+            119: begin
+                factor_real = 16'b0011100111011011;
+                factor_imag = 16'b0001101101011101;
+            end
+            120: begin
+                factor_real = 16'b0011101100100001;
+                factor_imag = 16'b0001100001111110;
+            end
+            121: begin
+                factor_real = 16'b0011110001000010;
+                factor_imag = 16'b0001010110010000;
+            end
+            122: begin
+                factor_real = 16'b0011110100111111;
+                factor_imag = 16'b0001001010010100;
+            end
+            123: begin
+                factor_real = 16'b0011111000010101;
+                factor_imag = 16'b0000111110001101;
+            end
+            124: begin
+                factor_real = 16'b0011111011000101;
+                factor_imag = 16'b0000110001111100;
+            end
+            125: begin
+                factor_real = 16'b0011111101001111;
+                factor_imag = 16'b0000100101100100;
+            end
+            126: begin
+                factor_real = 16'b0011111110110001;
+                factor_imag = 16'b0000011001000110;
+            end
+            127: begin
+                factor_real = 16'b0011111111101100;
+                factor_imag = 16'b0000001100100100;
+            end

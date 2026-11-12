@@ -1,0 +1,124 @@
+--- /home/radar/pyRadar-main/configFiles/mmwaveconfig_0508_30f128_safe.txt
++++ /home/radar/pyRadar-main/configFiles/generated/sar_1tx4rx_2048s_128p_30fps__20260702_205634.txt
+@@ -44,8 +44,7 @@
+ #rlChanCfg_t
+ #
+ channelTx=7;
+-channelRx=15;
+-cascading=0;
++channelRx=15;cascading=0;
+ #END
+ 
+ #
+@@ -142,8 +141,7 @@
+ txPhaseShifter=0;
+ freqSlopeConst=1657;
+ txStartTime=0;
+-numAdcSamples=1024;
+-digOutSampleRate=22500;
++numAdcSamples=2048;digOutSampleRate=22500;
+ hpfCornerFreq1=0;
+ hpfCornerFreq2=0;
+ rxGain=30;
+@@ -163,8 +161,7 @@
+ txPhaseShifter=0;
+ freqSlopeConst=1657;
+ txStartTime=0;
+-numAdcSamples=1024;
+-digOutSampleRate=22500;
++numAdcSamples=2048;digOutSampleRate=22500;
+ hpfCornerFreq1=0;
+ hpfCornerFreq2=0;
+ rxGain=30;
+@@ -184,8 +181,7 @@
+ txPhaseShifter=0;
+ freqSlopeConst=621;
+ txStartTime=0;
+-numAdcSamples=512;
+-digOutSampleRate=10000;
++numAdcSamples=2048;digOutSampleRate=10000;
+ hpfCornerFreq1=0;
+ hpfCornerFreq2=0;
+ rxGain=30;
+@@ -205,8 +201,7 @@
+ txPhaseShifter=0;
+ freqSlopeConst=621;
+ txStartTime=0;
+-numAdcSamples=256;
+-digOutSampleRate=10000;
++numAdcSamples=2048;digOutSampleRate=10000;
+ hpfCornerFreq1=0;
+ hpfCornerFreq2=0;
+ rxGain=30;
+@@ -223,8 +218,7 @@
+ freqSlopeVar=0;
+ idleTimeVar=0;
+ adcStartTimeVar=0;
+-txEnable=1;
+-#END
++txEnable=1;#END
+ 
+ #
+ #Chirp Configuration parameters, please modify if needed.
+@@ -258,14 +252,10 @@
+ #Frame configuration parameters, please modify if needed.
+ #rlFrameCfg_t
+ #
+-chirpStartIdxFCF=0;
+-chirpEndIdxFCF=0;
+-frameCount=1;
+-loopCount=128;
+-periodicity=6666667;
++chirpStartIdxFCF=0;chirpEndIdxFCF=0;frameCount=1;
++loopCount=128;periodicity=6666667;
+ triggerDelay=0;
+-numAdcSamples=2048;
+-triggerSelect=1;
++numAdcSamples=2048;triggerSelect=1;
+ #END
+ 
+ #
+@@ -288,9 +278,7 @@
+ chirpStartIdxOffset=0;
+ numOfBurst=1;
+ numOfBurstLoops=1;
+-subFramePeriodicity=5000000;
+-numAdcSamplesAF=256
+-numChirpsInDataPacket=1
++subFramePeriodicity=33333333;numAdcSamplesAF=2048numChirpsInDataPacket=1
+ #end
+ 
+ #
+@@ -303,9 +291,7 @@
+ chirpStartIdxOffset=0;
+ numOfBurst=1;
+ numOfBurstLoops=1;
+-subFramePeriodicity=5000000;
+-numAdcSamplesAF=256
+-numChirpsInDataPacket=1
++subFramePeriodicity=33333333;numAdcSamplesAF=2048numChirpsInDataPacket=1
+ #end
+ 
+ #
+@@ -318,9 +304,7 @@
+ chirpStartIdxOffset=0;
+ numOfBurst=1;
+ numOfBurstLoops=1;
+-subFramePeriodicity=5000000;
+-numAdcSamplesAF=256
+-numChirpsInDataPacket=1
++subFramePeriodicity=33333333;numAdcSamplesAF=2048numChirpsInDataPacket=1
+ #end
+ 
+ #
+@@ -333,9 +317,7 @@
+ chirpStartIdxOffset=0;
+ numOfBurst=1;
+ numOfBurstLoops=1;
+-subFramePeriodicity=5000000;
+-numAdcSamplesAF=256
+-numChirpsInDataPacket=1
++subFramePeriodicity=33333333;numAdcSamplesAF=2048numChirpsInDataPacket=1
+ #end
+ 
+ #

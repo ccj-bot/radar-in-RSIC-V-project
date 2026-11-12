@@ -1,0 +1,32 @@
+{
+  "schema": "nx-radar-profile-stream-validation/v1",
+  "accepted_at": "2026-07-20T03:48:32.369039+00:00",
+  "fingerprint": "5a0f6c4af1b3720baf06e4698c2e7b10a06961d40dc507872c6c1d95c5229d70",
+  "radar_config_sha256": "5455e3ab5a91b87465b7f1f45753953bdb52985911880e3502dd7ea8c71c74dd",
+  "dca_config_sha256": "40b7acde605572a1379daa8590340e190068f0e914901f6dfda23ba117dce895",
+  "evidence_session": "/home/ysy/nx_radar/.staging/optimization_20260720/sessions/20260720T114828__validate-s30-uniform",
+  "verified_bytes_per_chirp": 16384,
+  "verified_chirps_per_frame": 128,
+  "observed_source_port": 1024,
+  "assessment": {
+    "schema": "nx-radar-stream-discovery-assessment/v1",
+    "session": "/home/ysy/nx_radar/.staging/optimization_20260720/sessions/20260720T114828__validate-s30-uniform",
+    "frames": 10,
+    "planned_bytes_per_chirp": 16384,
+    "expected_total_bytes": 20971520,
+    "observed_total_bytes": 20970768,
+    "terminal_untransmitted_tail_bytes": 752,
+    "terminal_tail_is_dca_packetization": true,
+    "transport_bytes_per_chirp_candidates": [
+      16384
+    ],
+    "observed_bytes_per_chirp": 16384,
+    "quality_clean": true,
+    "observed_source_port": 1024,
+    "verified_bytes_per_chirp": 16384,
+    "verified_chirps_per_frame": 128,
+    "geometry_confirmed_for_complete_segments": true,
+    "formal_capture_accepted": false,
+    "assessed_at": "2026-07-20T03:48:32.366039+00:00"
+  }
+}

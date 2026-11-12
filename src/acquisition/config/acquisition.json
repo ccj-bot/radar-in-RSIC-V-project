@@ -1,0 +1,8 @@
+{
+  "radar_enabled": true,
+  "camera_enabled": true,
+  "camera_device": "/dev/v4l/by-id/usb-Sonix_Technology_Co.__Ltd._ABKO_APC1000_4K_WEBCAM_SN0001-video-index0",
+  "mode_id": "MJPG:800x600:30/1",
+  "segment_seconds": 10,
+  "reserve_disk_gib": 10
+}

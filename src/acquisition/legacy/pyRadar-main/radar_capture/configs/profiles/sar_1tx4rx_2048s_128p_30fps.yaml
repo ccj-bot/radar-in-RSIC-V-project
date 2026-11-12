@@ -1,0 +1,11 @@
+profile_name: sar_1tx4rx_2048s_128p_30fps
+template_config: configFiles/mmwaveconfig_0508_30f128_safe.txt
+device: AWR2243
+rx_channels: [0, 1, 2, 3]
+tx_sequence: [0]
+adc_samples: 2048
+chirps_per_frame: 128
+frame_rate_hz: 30
+segment_pulses: 128
+dca_packet_delay_us: 5
+notes: Offline phase-2 example profile for stable 1TX4RX capture.
