@@ -1,5 +1,10 @@
 # RISC-V 雷达联合项目
 
+> **求职/项目展示入口：**[雷达智脑 · RISC-V SAR 成像与智能感知（系统架构、实测、报告、视频）](portfolio/README.md)
+
+![K3端侧推理](portfolio/assets/02_k3_benchmark.png)
+
+
 围绕雷达采集、SAR 成像、RISC-V / K3 目标检测与 FPGA 图像接口开展开发。
 
 仓库：<https://github.com/ccj-bot/radar-in-RSIC-V-project>
@@ -17,7 +22,7 @@
 
 **仓库不包含模型权重。** 模型及回放输入只在本地保留，受 `.gitignore` 排除；从 GitHub 克隆后，需自行取得经授权的模型和数据。禁止通过 Git LFS、压缩包或改扩展名上传权重。
 
-视频、比赛申报文档、历史结果、二进制运行库和缓存均未纳入。原技术 README 与第三方许可按需保留；其中历史路径和测量结果属于迁移来源，当前操作说明见 [运行入口](docs/RUNNING.md)。
+本展示分支在 portfolio/ 提供演示视频、正式报告及结果图；原工程代码与设备运行环境保持在既有目录，二进制运行库、模型和原始数据不纳入。原技术 README 与第三方许可按需保留；其中历史路径和测量结果属于迁移来源，当前操作说明见 [运行入口](docs/RUNNING.md)。
 
 - [迁移范围](docs/MIGRATION.md)
 - [运行入口与依赖](docs/RUNNING.md)
