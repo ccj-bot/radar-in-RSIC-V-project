@@ -1,6 +1,6 @@
 # RISC-V 雷达联合项目
 
-- 当前目录为本项目独立开发仓库，GitHub：ccj-bot/radar-in-RSIC-V-project。
+- 当前目录为本项目独立开发仓库，GitHub：ccj-bot/radarbrain-riscv-sar。
 - 用户要求只上传关键代码与必要配置；视频、比赛申报材料和重复历史结果不纳入仓库。
 - **模型权重不上传 GitHub。** PT、ONNX、checkpoint 等只保存在本地；不能用强制添加、改扩展名、压缩包或 Git LFS 绕过这一要求。发布任何模型必须先取得用户新的明确授权。
 - 本地模型与输入遵循 .gitignore；迁移收据位于 .local/。提交前检查暂存清单和文件内容，确认不含权重、凭据和原始采集数据。

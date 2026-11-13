@@ -2,7 +2,7 @@
 
 围绕雷达采集、SAR 成像、RISC-V / K3 目标检测与 FPGA 图像接口开展开发。
 
-仓库：<https://github.com/ccj-bot/radar-in-RSIC-V-project>
+仓库：<https://github.com/ccj-bot/radarbrain-riscv-sar>
 
 | 路径 | 内容 |
 | --- | --- |
