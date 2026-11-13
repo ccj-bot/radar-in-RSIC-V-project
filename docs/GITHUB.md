@@ -3,7 +3,7 @@
 本项目已配置：
 
 ```text
-origin = https://github.com/ccj-bot/radar-in-RSIC-V-project.git
+origin = https://github.com/ccj-bot/radarbrain-riscv-sar.git
 branch = main
 user.name = ccj-bot
 user.email = 230313591+ccj-bot@users.noreply.github.com
@@ -36,7 +36,7 @@ git push
 新电脑获取代码：
 
 ```powershell
-git clone https://github.com/ccj-bot/radar-in-RSIC-V-project.git
+git clone https://github.com/ccj-bot/radarbrain-riscv-sar.git
 ```
 
 克隆不包含模型、采集数据、运行库及历史材料，这些资产需要另外在本地配置。不要强制推送来解决远程分支冲突。
